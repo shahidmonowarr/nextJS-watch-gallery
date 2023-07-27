@@ -1,4 +1,3 @@
-import Navbar from "@/components/Shared/Navbar";
 import "./globals.css";
 
 export const metadata = {
@@ -11,8 +10,7 @@ export default function RootLayout({ children }) {
     <html lang="en" data-theme="light">
       <body>
         <div>
-          <Navbar />
-          {children}
+          <div className="min-h-screen">{children}</div>
         </div>
       </body>
     </html>
