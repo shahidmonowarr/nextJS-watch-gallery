@@ -1,8 +1,10 @@
+import Image from "next/image";
+
 const ProductDetails = ({ product }) => {
   return (
     <div className="flex max-w-7xl mx-auto items-center border-b border-gray-300 w-[80%]">
       <div className="w-[50%]">
-        <img src={product?.image} alt="" />
+        <Image src={product?.image} alt="product" width={500} height={500} />
       </div>
       <div className="w-[50%] space-y-3">
         <h1 className="text-3xl font-semibold">{product?.name}</h1>
